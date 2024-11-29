@@ -46,12 +46,41 @@
 }
 
 #actions .item {
-    margin-left:22px;
+    margin-left: 40px;
 }
 
+.action-item {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 
+.item-img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
 
+.item-const::before {
+    display: block;
+    content: "1";
+    color: #fff;
+    font-size: 10px;
+    line-height: 15px;
+    height: 15px;
+    width: 15px;
+    background-color: #151414;
+    position: absolute;
+    margin-left: 40px;
+    border-radius: 50%;
+}
 
+.item-cart,
+.item-account {
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+}
 
 #banner {
     width: 100%;
@@ -167,7 +196,6 @@
 
 #list-products .item {
     width: 290px;
-    height: 374px;
     background:#362f2f;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -265,10 +293,9 @@
 
 #saleoff .box-right {
     background-size: 800px 323px;
-    background-image:url("images/slider_2.webp") ;
+    background-image: url(images/slider_2.webp);
     max-width: 800px;
-    height: 323px;  
-     
+    height: 322px;
 }
 
 
@@ -422,4 +449,63 @@
 .contact-email-icon{
     font-size: 16px;
     margin-right: 5px;
+}
+
+.production-buttun {
+    display: flex;
+    justify-content: space-between;
+}
+
+.production-shopping-cart {
+    height: 36px;
+    margin-top: 16px;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 14px;
+    line-height: 36px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1; 
+}
+
+.production-shopping-cart p {
+    padding: 0 10px;
+}
+
+.production-shopping-cart::after {
+    display: block;
+    content: '';
+    width: 0;
+    top: 0;
+    height: 36px;
+    background-color: rgb(86 89 235);
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+    transition: width 0.3s linear;
+}
+
+.production-shopping-cart:hover,
+.production-shopping-cart:hover::after  {
+    width: 150px;
+    color: #fff;
+}
+
+.button-buy {
+    margin-top: 16px;
+    margin-right: 14px;
+    margin-bottom: 10px;
+    float: right;
+    background-color: rgb(255 75 0 / 84%);
+    color: #f2ff00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-buy:hover {
+    background-color: #fdc200bb;
+    color: rgb(255, 255, 255);
 }
