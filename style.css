@@ -216,15 +216,6 @@
     
 }
 
-.to-bottom {
-    position:absolute;
-    bottom:-40px;
-    left:50%;
-    transform:translateX(-50%);
-}
-
-
-
 #wp-products {
     padding-top:116px;
     padding-bottom: 78px;
