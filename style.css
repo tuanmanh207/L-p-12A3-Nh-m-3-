@@ -468,6 +468,11 @@
     color:#fff;
 }
 
+.introduce{
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
 .contact-header {
     font-size: 20px;
     text-transform: uppercase;
